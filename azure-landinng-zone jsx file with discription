@@ -1,0 +1,15 @@
+https://claude.ai/public/artifacts/9b30a7d2-ff26-4caa-a5c4-760e2901249c
+----------------------------------------------------------------------------------------------
+Architecture tab* — shows the full hub-and-spoke diagram with:
+- Management scope at top (where Policy lives)
+- Hub VNet in the center with all 3 subnets
+- Spoke1 and Spoke2 on either side connected via peering arrows
+- NSG-Hub and Route Tables shown inside Hub
+- ASG micro-segmentation shown below
+- Identity and Policy panels at the bottom
+
+*4 Pillars tab* — click each pillar card to expand and see all components you built under that pillar
+
+*NSG Rules tab* — full inbound and outbound rules table with Allow/Deny colour coding
+
+*Progress tab* — shows all 11 phases with Complete/Skipped/Pending status and 90% progress bar
