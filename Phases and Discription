@@ -1,0 +1,34 @@
+# Azure Enterprise Landing Zone
+
+✅ Phase 1  → Resource Groups with governance tagging
+✅ Phase 2  → Hub VNet with 3 subnets
+✅ Phase 3  → 2 Spoke VNets (workloads + devtest)
+✅ Phase 4  → VNet Peering (hub-spoke connectivity)
+✅ Phase 5  → NSGs with deny-all + explicit allow rules
+✅ Phase 6  → ASGs for micro-segmentation
+✅ Phase 7  → Route Tables forcing traffic through Hub
+✅ Phase 8  → 3 Azure Policies (storage, regions, tags)
+✅ Phase 9  → Custom RBAC role + time-limited assignment
+✅ Phase 10 → Test VM with no public IP (Serial Console access)
+✅ Phase 11 → GitHub documentation
+
+## Architecture
+[your diagram image]
+
+## What I Built
+- Hub & Spoke VNet architecture with VNet Peering
+- NSG-based perimeter security (replacing Azure Firewall)
+- ASG micro-segmentation between workload tiers
+- Azure Policy for compliance enforcement
+- Custom RBAC roles implementing Least Privilege
+- Time-limited role assignments (PIM equivalent)
+
+## Design Decisions
+Used NSGs instead of Azure Firewall to achieve same security 
+controls within free-tier constraints. In production this would 
+extend to Azure Firewall Premium + PIM.
+
+## Technologies
+Azure VNet | NSG | ASG | Azure Policy | Entra ID | RBAC
+
+
