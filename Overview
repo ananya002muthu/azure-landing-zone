@@ -1,0 +1,28 @@
+azure-landing-zone/
+│
+├── README.md                    ← Architecture + what you built
+├── architecture-diagram.png     ← Draw using draw.io (free)
+│
+├── networking/
+│   ├── hub-vnet-config.md      ← Document what you created
+│   ├── spoke-vnets-config.md
+│   └── peering-config.md
+│
+├── security/
+│   ├── nsg-rules.md            ← All your NSG rules documented
+│   ├── asg-config.md
+│   └── route-tables.md
+│
+├── governance/
+│   ├── azure-policies.md
+│   └── custom-policy-tags.json ← The JSON you used
+│
+├── identity/
+│   ├── custom-roles.md
+│   └── rbac-assignments.md
+│
+└── screenshots/                 ← Portal screenshots of everything
+    ├── vnet-peering-connected.png
+    ├── nsg-rules.png
+    ├── policy-assignments.png
+    └── rbac-assignments.png
